@@ -1,0 +1,22 @@
+.blogManageTitle {
+	margin: 20px;
+}
+
+.recomendDiv {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.blogManageTable {
+	width: 800px;
+	text-align: left;
+	margin-left: 20px;
+}
+
+.blogManageTable th, .blogManageTable td {
+	padding: 5px;
+}
+
+.blogManageTable td a {
+	margin-right: 10px;
+}

@@ -1,0 +1,47 @@
+.writeBlogTitle {
+	margin: 20px;
+}
+.blogInfo {
+	margin-left: 20px;
+}
+.blogInfo .line {
+	height: 30px;
+}
+.blogInfo .line .title {
+	display: inline-block;
+	width: 200px;
+	text-align: right;
+}
+.blogInfo .line input[type="text"] {
+	width: 200px;
+}
+ .blogInfo select {
+	width: 204px;
+	margin-left: -8px;
+	height: 20px;
+ }
+.blogInfo .line input[type="file"] {
+	position: absolute;
+	top: -100px;
+	left: 0px;
+}
+.blogInfo .line button {
+	padding: 2px;
+	margin-right: 10px;
+}
+.writeBlogEditor {
+	width: 96%;
+	margin: 10px auto;
+}
+.writeBlogBtn {
+	margin-left: 20px;
+	padding: 2px;
+}
+.middlediv {
+	width: 1000px;
+	margin: 0px auto;
+}
+.middlediv .content {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}

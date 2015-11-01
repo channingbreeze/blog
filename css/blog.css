@@ -1,0 +1,189 @@
+.middlediv {
+	width: 1000px;
+	margin: 0px auto;
+}
+
+.middlediv .titleDiv {
+	width: 100%;
+	margin-top: 20px;
+	height: 50px;
+	position: relative;
+	border-bottom: 1px solid gray;
+}
+
+.middlediv .titleDiv .title {
+	font-size: 30px;
+	padding-top: 15px;
+	text-align: center;
+}
+
+.middlediv .titleDiv .readCount {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	font-size: 14px;
+	color: gray;
+}
+
+.middlediv .titleDiv .blogDate {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	font-size: 14px;
+	color: gray;
+}
+
+.middlediv .absInfo {
+	margin-top: 10px;
+}
+
+.middlediv .absInfo img {
+	border-radius: 10px;
+	margin-left: 20px;
+	float: left;
+}
+
+.middlediv .absInfo .tags {
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+	width: 700px;
+}
+
+.middlediv .absInfo .tags li {
+	float: left;
+	padding: 10px;
+	background-color: #FFDBEA;
+	border-radius: 10px;
+	margin-left: 10px;
+}
+
+.middlediv .absInfo .abstract {
+	float: left;
+	width: 700px;
+	margin-left: 10px;
+	text-indent: 32px;
+	margin-top: 10px;
+	line-height: 25px;
+}
+
+.middlediv .content {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.middlediv .authorInfo {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.middlediv .authorInfo .authorTitle {
+	font-size: 20px;
+}
+
+.middlediv .authorInfo img {
+	border-radius: 50%;
+	margin-top: 10px;
+	margin-left: 20px;
+	float: left;
+}
+
+.middlediv .authorInfo .authorName {
+	margin-left: 140px;
+	margin-top: 18px;
+	font-size: 30px;
+}
+
+.middlediv .authorInfo .authorBrief {
+	margin-left: 140px;
+	margin-top: 10px;
+}
+
+.middlediv .authorInfo .moreInfo {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.middlediv .authorInfo .moreInfo .title {
+	font-size: 14px;
+}
+
+.middlediv .authorInfo .moreInfo img {
+	width: 100px;
+	height: 100px;
+	border-radius: 0px;
+	right: -35px;
+	position: relative;
+}
+
+.middlediv .commentDiv {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.middlediv .commentDiv .commentTitle {
+	font-size: 20px;
+}
+
+.middlediv .commentDiv .commentUl {
+	margin-top: 10px;
+}
+
+.middlediv .commentDiv .commentUl li {
+	position: relative;
+	margin-top: 10px;
+	padding: 10px;
+	background-color: #EDEDED;
+	border-radius: 10px;
+}
+
+.middlediv .commentDiv .commentUl li .username {
+	font-size: 18px;
+}
+
+.middlediv .commentDiv .commentUl li .date {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: gray;
+}
+
+.middlediv .commentDiv .commentUl li .comment {
+	text-indent: 36px;
+	line-height: 24px;
+}
+
+.middlediv .commentDiv .commentForm {
+	margin-top: 20px;
+	padding: 10px;
+	background-color: #EDEDED;
+	border-radius: 10px;
+}
+
+.middlediv .commentDiv .commentForm .line {
+	margin-top: 10px;
+}
+
+.middlediv .commentDiv .commentForm .line input[type="text"] {
+	width: 300px;
+	height: 20px;
+	padding-left: 3px;
+}
+
+.middlediv .commentDiv .commentForm .line textarea {
+	width: 99%;
+	height: 200px;
+	padding: 3px;
+}
+
+.middlediv .commentDiv .commentForm .line button {
+	text-align: center;
+	margin: 0px auto;
+	width: 100px;
+	height: 30px;
+	border-radius: 10px;
+	outline: none;
+	background-color: #FFDBEA;
+}

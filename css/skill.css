@@ -1,0 +1,87 @@
+.middlediv {
+	width: 1000px;
+	margin: 0px auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.middlediv .articlesList {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.middlediv .articlesList li.article {
+	width: 100%;
+}
+.middlediv label {
+	width: 100%;
+	height: 40px;
+	border: 2px solid #EDEDED;
+	display: block;
+	border-radius: 10px;
+	line-height: 40px;
+	cursor: pointer;
+	text-indent: 20px;
+}
+.middlediv label:hover {
+	background-color: #EDEDED;
+}
+.middlediv input[type="radio"] {
+	opacity: 0.0;
+	position: relative;
+	left: -1000px;
+}
+.middlediv input[type="radio"] + .blogs {
+	display: none;
+}
+.middlediv input[type="radio"]:checked + .blogs {
+	display: block;
+}
+.middlediv .blogs {
+	margin-left: 30px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.middlediv .blogs input[type="radio"] + .blog {
+	display: none;
+}
+.middlediv .blogs input[type="radio"]:checked + .blog {
+	display: block;
+}
+.middlediv .blogs .blog {
+	cursor: pointer;
+	border-radius: 10px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.middlediv .blogs .blog:hover {
+	background-color: #EDEDED;
+}
+.middlediv .blogs .blog .blogTitle,
+.middlediv .blogs .otherBlogs li {
+	font-size: 25px;
+}
+.middlediv .blogs .blog .blogTags {
+	margin-top: 5px;
+}
+.middlediv .blogs .blog .blogTags li {
+	float: left;
+	padding: 5px;
+	background-color: #FFDBEA;
+	margin-right: 5px;
+	border-radius: 5px;
+}
+.middlediv .blogs .blog img {
+	float: left;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+.middlediv .blogs .blog .subTitle {
+	margin-top: 10px;
+	margin-left: 250px;
+	text-indent: 40px;
+	font-size: 20px;
+	line-height: 30px;
+}
+.middlediv .blogs .blog .info {
+	margin-top: 5px;
+}

@@ -1,0 +1,13 @@
+.smallTypeManageTitle {
+	margin: 20px;
+}
+
+.smallTypeTable {
+	margin-left: 20px;
+	border-collapse: collapse;
+}
+
+.smallTypeTable td, .smallTypeTable th {
+    border: 1px solid black;
+    padding: 5px;
+}

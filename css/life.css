@@ -1,0 +1,75 @@
+.middlediv {
+	width: 1000px;
+	margin: 0px auto;
+}
+.middlediv li.oneblog {
+	width: 95%;
+	margin: 20px auto;
+	border: 3px solid #EDEDED;
+	border-radius: 40px;
+	cursor: pointer;
+	transition : all 0.2s linear 0s;
+}
+.middlediv li.oneblog:hover {
+	background-color: #EDEDED;
+}
+.middlediv li.oneblog .innerdiv {
+	padding: 30px;
+	position: relative;
+}
+.middlediv li.oneblog .innerdiv .info {
+	margin-top: 10px;
+	font-size: 16px;
+	position: absolute;
+	top: 40px;
+	right: 40px;
+}
+.middlediv li.oneblog .innerdiv p {
+	text-indent: 40px;
+	line-height: 30px;
+	font-size: 20px;
+	margin-top: 20px;
+}
+.middlediv li.oneblog .innerdiv .tags li {
+	float: left;
+	font-size: 14px;
+	border: 2px solid #EDEDED;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 10px;
+	padding: 5px;
+	border-radius: 5px;
+}
+.middlediv li.oneblog .innerdiv img {
+	margin-top: 10px;
+	margin-right: 40px;
+	margin-bottom: 20px;
+	float: left;
+	box-shadow : 10px 10px 20px black;
+	border-radius: 10px;
+}
+.pag {
+	text-align: center;
+}
+.pag ul {
+	display: inline-block;
+	margin: 10px auto;
+	margin-bottom: 20px;
+}
+.pag li {
+	float: left;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #EDEDED;
+	text-align: center;
+	line-height: 40px;
+	margin-left: 10px;
+}
+.pag li.cur {
+	background-color: #FFE0B4;
+}
+.pag li.clickable {
+	background-color: #C9EDFF;
+	cursor: pointer;
+}

@@ -1,0 +1,116 @@
+.middlediv {
+    width: 1000px;
+    margin: 0px auto;
+}
+.middlediv .leftdiv {
+    width: 700px;
+    float: left;
+}
+.middlediv .leftdiv .subtitle {
+	font-size: 30px;
+	line-height: 30px;
+	padding-left: 15px;
+	border-left: 5px solid #40EA1C;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.middlediv .leftdiv .blog {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+.middlediv .leftdiv .blog li.oneblog {
+	width: 92%;
+	float: left;
+	transition : all 0.2s linear 0s;
+	border-radius: 10px;
+	padding: 2%;
+}
+.middlediv .leftdiv .blog li.oneblog:hover {
+	cursor: pointer;
+	background-color: #EDEDED;
+}
+.middlediv .leftdiv .blog li.oneblog img {
+	float: left;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+.middlediv .leftdiv .blog li.oneblog .title {
+	width: 100%;
+	text-overflow : ellipsis;
+	overflow : hidden;
+	white-space : nowrap;
+	font-size: 24px;
+}
+.middlediv .leftdiv .blog li.oneblog .abstract {
+	font-size: 16px;
+	line-height: 25px;
+	text-indent: 32px;
+	margin-top: 7px;
+	margin-left: 255px;
+}
+.middlediv .leftdiv .blog li.oneblog .tags {
+	margin-left: -5px;
+}
+.middlediv .leftdiv .blog li.oneblog .tags li {
+	float: left;
+	border-radius: 5px;
+	background-color: #FFDBEA;
+	margin: 5px;
+	margin-bottom: 0px;
+	padding: 5px;
+}
+.middlediv .leftdiv .blog li.oneblog .info {
+	margin-top: 10px;
+}
+.middlediv .rightdiv {
+    width: 300px;
+    float: left;
+}
+.middlediv .rightdiv .personalInfo {
+	margin-top: 80px;
+	position: relative;
+}
+.middlediv .rightdiv .personalInfo .ownerTag,
+.middlediv .rightdiv .tagCloud .ownerTag {
+	position: absolute;
+	top: -10px;
+	left: 20px;
+	background-color: #FFFFFF;
+	font-size: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.middlediv .rightdiv .personalInfo ul {
+	border: 2px solid #D1E8F7;
+	border-radius: 20px;
+	float: left;
+	padding: 10px;
+	padding-top: 20px;
+}
+.middlediv .rightdiv .personalInfo li {
+	font-size: 16px;
+	background-color: #EDEDED;
+	padding: 5px;
+	margin: 5px;
+	float: left;
+}
+.middlediv .rightdiv .personalInfo li.spec {
+	background-color: #FFDBEA;
+}
+.middlediv .rightdiv .tagCloud {
+	margin-top: 105px;
+	position: relative;
+}
+.middlediv .rightdiv .tagCloud ul {
+	border: 2px solid #D1E8F7;
+	border-radius: 20px;
+	float: left;
+	padding: 10px;
+	padding-top: 20px;
+}
+.middlediv .rightdiv .tagCloud li {
+	float: left;
+	padding: 5px;
+	margin: 5px;
+}

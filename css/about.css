@@ -1,0 +1,46 @@
+.middlediv {
+	width: 1000px;
+	margin: 0px auto;
+}
+.middlediv .headInfo {
+	margin-top: 10px;
+}
+.middlediv .headInfo img {
+	border-radius: 50%;
+	float: left;
+}
+.middlediv .headInfo .name {
+	margin-left: 100px;
+	font-size: 30px;
+	line-height: 50px;
+}
+.middlediv .headInfo .basicInfo {
+	margin-left: 100px;
+	font-size: 16px;
+	line-height: 20px;
+}
+.middlediv .info {
+	margin-top: 20px;
+	line-height: 25px;
+}
+.middlediv .info .infoTitle {
+	display: inline-block;
+	width: 243px;
+	text-align: right;
+	color: gray;
+}
+.middlediv .info .infoContent {
+	display: inline-block;
+	width: 700px;
+}
+.middlediv .moreInfo {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 20px;
+}
+.middlediv .moreInfo img {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	padding: 10px;
+	box-shadow: 10px 10px 20px black;
+}
