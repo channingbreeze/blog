@@ -55,10 +55,10 @@ if(isset($_GET['id'])) {
     			<div class="abstract"><?php echo $blog['abstract'];?></div>
     		</div>
     		<div class="clear"></div>
-    		<div class="content">
+    		<div class="content blogContent">
     			<?php echo $blog['content'];?>
     		</div>
-    		<div class="">转载请注明出处：<a href="www.baidu.com">http://dddd.cccc.xxxx</a></div>
+    		<div class="reprint">转载请注明出处：<a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];?>"><?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];?></a></div>
     		<hr />
     		<div class="authorInfo">
     			<div class="authorTitle">作者简介：</div>

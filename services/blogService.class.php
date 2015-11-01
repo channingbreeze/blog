@@ -40,7 +40,7 @@ class blogService {
 	}
 	
 	public function getNewestBlog() {
-		$sql = "select id, gmt_create, title, img_url, tags, abstract, readCount from lx_blog order by gmt_create desc limit 0,1";
+		$sql = "select id, gmt_create, gmt_modify, title, img_url, tags, abstract, readCount from lx_blog order by gmt_create desc limit 0,1";
 		$sqlHelper = new SQLHelper();
 		$blogArr = $sqlHelper->execute_dql_array($sql);
 		if(count($blogArr) == 0) {

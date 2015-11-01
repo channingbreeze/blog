@@ -65,7 +65,12 @@ footer p span {
 
 .blogContent p {
 	text-indent: 34px;
-	line-height: 30px;
+	line-height: 40px;
+}
+
+.blogContent p img {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .blogContent pre {

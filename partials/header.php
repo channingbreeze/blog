@@ -10,7 +10,7 @@
 			<li><a href="about.html">关于</a></li>
 		</ul>
 		<div class="headpic">
-			<a href="#"><img src="images/head.png" /></a>
+			<a href="index.html"><img src="images/head.png" /></a>
 		</div>
 	</div>
 </header>

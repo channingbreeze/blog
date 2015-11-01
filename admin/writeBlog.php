@@ -6,13 +6,11 @@ if(!isset($_SESSION['username'])) {
 }
 
 require_once dirname ( __FILE__ ) . '/../tools/SQLHelper.class.php';
-require_once dirname ( __FILE__ ) . '/../services/blogService.class.php';
 
-$blogService = new BlogService();
+$sqlHelper = new SQLHelper();
 
 if(isset($_GET['id'])) {
 	$id = $_GET['id'];
-	$sqlHelper = new SQLHelper();
 	$sql = "select * from lx_blog where id=" . $id;
 	$res = $sqlHelper->execute_dql_array($sql);
 	if(count($res) == 0) {
@@ -26,7 +24,13 @@ if(isset($_GET['id'])) {
 }
 
 if(!$update) {
-	$order = $blogService->getMaxOrder() + 10;
+	$sql = "select max(show_order) as max_show_order from lx_blog where is_deleted=0";
+	$res = $sqlHelper->execute_dql_array($sql);
+	if(count($res) == 0) {
+		$order = 0;
+	} else {
+		$order = $res[0]['max_show_order'];
+	}
 }
 
 ?>
@@ -93,7 +97,8 @@ if(!$update) {
 				<select id="smallTypeSelect">
 					<option>请选择</option>
 					<?php 
-						$types = $blogService->getSmallType();
+						$sql = "select distinct blog_small_type, small_type_order from lx_blog where blog_big_type='技术' order by small_type_order";
+						$types = $sqlHelper->execute_dql_array($sql);
 						foreach($types as $type) {
 					?>
 					<option><?php echo $type['small_type_order'] . "-" . $type['blog_small_type'];?></option>
