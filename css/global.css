@@ -5,6 +5,7 @@
 
 body {
 	overflow-y: scroll;
+	word-break: break-all;
 }
 
 li {
