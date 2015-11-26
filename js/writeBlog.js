@@ -44,7 +44,7 @@
     
     // 提交博客
     $("#subBtn").on('click', function(e) {
-    	var params = $("#blogForm").serialize() + '&blog=' + editor.getContent();
+    	var params = $("#blogForm").serialize() + '&blog=' + encodeURIComponent(editor.getContent());
     	$.post('../inter/admin/submitBlog.php', params, function(data) {
     		if(data == "success") {
     			window.alert('提交成功');
