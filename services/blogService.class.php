@@ -75,8 +75,7 @@ class blogService {
 			$totalPage = $totalPage + 1;
 		}
 		$from = ($page - 1) * $blogsPerPage;
-		$to = $from + $blogsPerPage;
-		$sql = "select id, gmt_modify, title, img_url, tags, abstract, readCount from lx_blog where blog_big_type='生活' and is_deleted=0 order by show_order desc limit " . $from . "," . $to;
+		$sql = "select id, gmt_modify, title, img_url, tags, abstract, readCount from lx_blog where blog_big_type='生活' and is_deleted=0 order by show_order desc limit " . $from . "," . $blogsPerPage;
 		$blogs = $sqlHelper->execute_dql_array($sql);
 		$res = array();
 		$res['curPage'] = $page;
