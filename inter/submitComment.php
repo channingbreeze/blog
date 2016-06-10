@@ -15,16 +15,22 @@ if(isset($_POST['id']) &&
 	$website = $_POST['website'];
 	$content = $_POST['content'];
 	
-	if(!StringUtil::startsWith($website, "http")) {
-		$website = "http://" . $website;
-	}
-	
-	$commentService = new CommentService();
-	$res = $commentService->addComment($id, $username, $email, $website, $content);
-	if($res) {
-		echo "true";
+	// 如果用户名或者评论为空，返回false
+	if(empty(trim($username)) || empty(trim($content))) {
+		echo false;
 	} else {
-		echo "false";
+	
+		if(!StringUtil::startsWith($website, "http")) {
+			$website = "http://" . $website;
+		}
+		
+		$commentService = new CommentService();
+		$res = $commentService->addComment($id, $username, $email, $website, $content);
+		if($res) {
+			echo "true";
+		} else {
+			echo "false";
+		}
 	}
 	
 } else {

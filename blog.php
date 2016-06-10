@@ -8,6 +8,9 @@ if(isset($_GET['id'])) {
 	$sql = "select * from lx_blog where is_deleted=0 and id=" . $id;
 	$res = $sqlHelper->execute_dql_array($sql);
 	if(count($res) == 0) {
+		?>
+		<script>window.location.href="http://www.channingbreeze.com/index.html";</script>
+		<?php
 		exit();
 	} else {
 		$blog = $res[0];
@@ -89,10 +92,10 @@ if(isset($_GET['id'])) {
 	    		</ul>
 	    		<form class="commentForm" id="commentForm">
 	    			<input type="hidden" name="id" value="<?php echo $blog['id'];?>" />
-	    			<div class="line">用户名：<input type="text" name="username"/></div>
+	    			<div class="line">用户名：<input type="text" name="username" id="username"/></div>
 	    			<div class="line">邮　箱：<input type="text" name="email" placeholder="选填"/></div>
 	    			<div class="line">主　页：<input type="text" name="website" placeholder="选填"/></div>
-	    			<div class="line"><textarea rows="" cols="" name="content"></textarea></div>
+	    			<div class="line"><textarea rows="" cols="" name="content" id="content"></textarea></div>
 	    			<div class="line center"><button id="submit">提交</button></div>
 	    		</form>
     		</div>

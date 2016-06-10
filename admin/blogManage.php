@@ -28,7 +28,7 @@ $blogService = new BlogService();
 	    	<button id="subRecomend">提交</button>
     	</div>
     	<table class="blogManageTable" border="1px" cellspacing="0px">
-    		<tr><th>id</th><th>title</th><th>readCount</th><th>blog_big_type</th><th>blog_small_type</th><th>show_order</th><th>操作</th></tr>
+    		<tr><th>id</th><th>title</th><th>readCount</th><th>blog_big_type</th><th>blog_small_type</th><th>blog_small_order</th><th>show_order</th><th>操作</th></tr>
     		<?php 
     		$blogs = $blogService->getBlogs();
     		foreach ($blogs as $blog) {
@@ -39,6 +39,7 @@ $blogService = new BlogService();
 				<td><?php echo $blog['readCount'];?></td>
 				<td><?php echo $blog['blog_big_type'];?></td>
 				<td><?php echo $blog['blog_small_type'];?></td>
+				<td><?php echo $blog['blog_small_order'];?></td>
 				<td><?php echo $blog['show_order'];?></td>
 				<td><a href="../blog-<?php echo $blog['id'];?>.html">查看</a>
 					<a href="writeBlog.php?id=<?php echo $blog['id'];?>">编辑</a>
