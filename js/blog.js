@@ -6,13 +6,15 @@
 　　 }
 	
 	$("#submit").on('click', function(e) {
+		e.preventDefault();
 		if(!trim($("#username").val())) {
 			window.alert("请填写用户名！");
+			return;
 		}
 		if(!trim($("#content").val())) {
 			window.alert("请填写评论！");
+			return;
 		}
-		e.preventDefault();
 		$.post('inter/submitComment.php', $("#commentForm").serialize(), function(data) {
 			if(data == "true") {
 				window.location.reload();

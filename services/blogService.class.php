@@ -6,7 +6,7 @@ class blogService {
 	
 	public function getBlogs() {
 		$sqlHelper = new SQLHelper();
-		$sql = "select id, title, readCount, blog_big_type, blog_small_type, show_order from lx_blog where is_deleted=0";
+		$sql = "select id, title, readCount, blog_big_type, blog_small_type, small_type_order, show_order from lx_blog where is_deleted=0";
 		$blogs = $sqlHelper->execute_dql_array($sql);
 		return $blogs;
 	}
