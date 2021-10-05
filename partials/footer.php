@@ -5,6 +5,6 @@
 	</p>
 	<p>
 		Copyright <span>©</span> 2015 channingbreeze.com All Rights Reserved |
-		<a href="http://www.miitbeian.gov.cn/" rel="nofollow" target="_blank">京ICP备15008048号-1</a>
+		<a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank">京ICP备15008048号-3</a>
 	</p>
 </footer>
