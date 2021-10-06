@@ -16,7 +16,7 @@ CREATE TABLE `lx_blog` (
   `is_deleted` tinyint(4) DEFAULT '0' COMMENT '是否被删除',
   `show_order` bigint(20) DEFAULT '0' COMMENT '排列顺序',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=64 DEFAULT CHARSET=utf8mb4 COMMENT='博客表';
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4 COMMENT='博客表';
 
 CREATE TABLE `lx_comment` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
@@ -28,7 +28,7 @@ CREATE TABLE `lx_comment` (
   `website` varchar(512) DEFAULT NULL COMMENT '手机号',
   `content` text COMMENT '评论内容',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=39 DEFAULT CHARSET=utf8mb4 COMMENT='评论表';
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4 COMMENT='评论表';
 
 CREATE TABLE `lx_picture` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
@@ -38,7 +38,7 @@ CREATE TABLE `lx_picture` (
   `pic_url` varchar(512) DEFAULT NULL COMMENT '图片路径',
   `pic_size` varchar(128) DEFAULT NULL COMMENT '图片大小',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=174 DEFAULT CHARSET=utf8mb4 COMMENT='图片表';
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4 COMMENT='图片表';
 
 CREATE TABLE `lx_tag` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
@@ -47,7 +47,7 @@ CREATE TABLE `lx_tag` (
   `tagname` varchar(256) DEFAULT NULL COMMENT '标签',
   `count` bigint(20) DEFAULT NULL COMMENT '标签被引用的次数',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COMMENT='标签表';
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4 COMMENT='标签表';
 
 CREATE TABLE `lx_user` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
@@ -59,4 +59,4 @@ CREATE TABLE `lx_user` (
   `head_url` varchar(256) DEFAULT NULL COMMENT '头像',
   `extension` varchar(1024) DEFAULT NULL COMMENT '扩展字段，json格式，用来存推荐博客的id，{recomendId:1}',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COMMENT='用户表';
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4 COMMENT='用户表';
